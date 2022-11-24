@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:foregroundTint="#F31515"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Welcome User"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        tools:ignore="InvalidId" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Please enter your details"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        tools:ignore="InvalidId" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="4dp"
+        android:hint="   Enter your name"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/edtday"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text3"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Day"
+        android:inputType="date"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtmonth"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text3"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/edtday"
+        android:background="@drawable/edit_text_border"
+        android:hint="Month"
+        android:inputType="date"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtyear"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text3"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/edtmonth"
+        android:background="@drawable/edit_text_border"
+        android:hint="Year"
+        android:inputType="date"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/edtday"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text4"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="4dp"
+        android:hint="    Enter your email"
+        android:inputType="textEmailAddress"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtemail"
+        android:layout_marginTop="50dp"
+        android:background="@color/orange"
+        android:hint="Submit"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/btnview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsubmit"
+        android:layout_marginTop="30dp"
+        android:background="@color/orange"
+        android:hint="View data"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
